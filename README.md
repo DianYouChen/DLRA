@@ -1,8 +1,7 @@
 ## The DeepQPF-PONI Model Codebase
 
-This repository presents the contents of the DeepQPF-PONI model, which is trained with rain rate (mm/h), radar reflectivity (dBZ), and heterogeneous weather data. 
-The model input incorporates QPESUMS rain rate, column value (CV), and environment variables from ERA5. 
-This model predicts accumulated hourly rainfall at a lead time of three hours.
+This repository contains the DeepQPF-PONI model, trained with _rain rate (mm/h)_, _radar reflectivity (dBZ)_, and _heterogeneous weather data_. The model input incorporates _QPESUMS rain rate_, _column value (CV)_, and environment variables from _ERA5_. 
+It is designed to predict accumulated hourly rainfall with a lead time of three hours.
 
 ### How to build the environment
 ``` python=1
@@ -40,7 +39,7 @@ pip install cdsapi # for EC climate data
 conda install -c anaconda basemap -y
 ```
 ### Locally connected network
-Since the current version of PyTorch does not include locally connected network algorithms, users need to manually add the `Conv2dLocal` module to the PyTorch source code. Please refer to the [pull request](https://github.com/pytorch/pytorch/pull/1583/files) for detailed instructions and code implementation.
+Since PyTorch 1.6.3 **does not include** locally connected network algorithms, users need to manually add the `Conv2dLocal` module to the PyTorch source code. Please refer to the [pull request](https://github.com/pytorch/pytorch/pull/1583/files) for detailed instructions and code implementation.
 
 
 
