@@ -14,3 +14,13 @@ conda create --name deepQPF-PONI
 
 # turn off the auto-activate
 conda config --set auto_activate_base false
+
+# activate env
+conda activate deepQPF-PONI
+
+# install packages
+
+
+
+
+
