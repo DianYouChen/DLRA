@@ -1,0 +1,25 @@
+# customized version of docker-compose
+# latest version may have more functions
+version: "3.8"
+
+# start the container
+services:
+
+  fast_eval:
+    image: dlra:v4.0
+    container_name: fast_eval
+    stdin_open: false
+    tty: false
+    user: ${USERID}:${GROUPID}
+    volumes:
+      - ./:/work_dir
+    environment:
+      # alternative way to add sys.path
+      - PYTHONPATH=/work_dir
+      # necessary arbitrary ENVs
+      - ROOT_DATA_DIR=/work_dir
+      - PLT_TOOL_DIR=/work_dir/pyplot_tools/static
+      - INPDIR=/work_dir/input_cwb
+      - OUPDIR=/work_dir/output_dlra
+    working_dir: /work_dir
+    command: python 0_fast_eval.ipynb

@@ -1,0 +1,8 @@
+**/.ipynb_checkpoints
+**/__pycache__
+**/RF* 
+# All RF* data is ignored and Git doesn't record empty 
+# folder, so ./checkpoints dir is not necessay to be 
+# written. If you want to push an empty folder, use
+# .gitkeep.
+logs

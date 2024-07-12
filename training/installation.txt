@@ -1,0 +1,24 @@
+# conda create --name dlra python=3.8.12
+conda install -c conda-forge jupyterlab #有這個就不需要notebook了
+conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
+pip3 install geopandas # don't use conda-forge, it will crash down 
+conda install -c anaconda netcdf4 -y
+conda install -c conda-forge matplotlib -y
+conda install -c conda-forge cartopy -y
+pip install scipy
+pip install pytorch-lightning # version==1.6.3
+pip install pytorch-msssim
+pip install test-tube
+pip install wget
+pip install python-crontab
+
+
+/*
+pip install cdsapi # for EC climate data
+conda install -c anaconda basemap -y
+# 複製一份def dedent到~/site-packages/matplotlib/cbook/__init__.py
+# os.environ['PROJ_LIB']='~/anaconda3/envs/myenv_3dradar/share/proj/'
+*/
+
+# on TWCC
+pip install transformers -U
