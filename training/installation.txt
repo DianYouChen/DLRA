@@ -5,11 +5,15 @@ pip3 install geopandas # don't use conda-forge, it will crash down
 conda install -c anaconda netcdf4 -y
 conda install -c conda-forge matplotlib -y
 conda install -c conda-forge cartopy -y
+conda install -c conda-forge cmaps -y
 pip install scipy
 pip install pytorch-lightning # version==1.6.3
 pip install pytorch-msssim
 pip install test-tube
 pip install wget
+pip install metpy
+pip install tqdm
+pip install wandb
 pip install python-crontab
 
 
