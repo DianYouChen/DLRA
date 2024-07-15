@@ -3,6 +3,9 @@
 This repository contains the DeepQPF-PONI model, trained with _rain rate (mm/h)_, _radar reflectivity (dBZ)_, and _heterogeneous weather data_. The model input incorporates _QPESUMS rain rate_, _column value (CV)_, and environment variables from _ERA5_. 
 It is designed to predict accumulated hourly rainfall with a lead time of three hours.
 
+![](evaluation/codes_from_bk2/CombQPF_20220526_06-11_f99.png)
+_Fig. 1. Comparison of 3-h accumulated rainfall (mm; color bar) predictions in the case of heavy rainfall caused by a mesoscale convective system during 06:00 – 14:00 UTC 26 MAY 2022 for the PONI_All model, QPESUMS extrapolation, and the numerical model RWRF._
+
 ### How to build the environment
 ``` python=1
 # update conda in base env
