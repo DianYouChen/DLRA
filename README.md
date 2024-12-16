@@ -42,7 +42,7 @@ pip install cdsapi # for EC climate data
 conda install -c anaconda basemap -y
 ```
 ### Locally connected network
-Since PyTorch 1.6.3 **does not include** locally connected network algorithms, users need to manually add the `Conv2dLocal` module to the PyTorch source code. Please refer to the [pull request](https://github.com/pytorch/pytorch/pull/1583/files) for detailed instructions and code implementation.
+Since PyTorch 1.6.3 **does NOT** include locally connected network algorithms, users need to manually add the `Conv2dLocal` module to the PyTorch source code. Please refer to the [pull request](https://github.com/pytorch/pytorch/pull/1583/files) for detailed instructions and code implementation.
 
 
 
