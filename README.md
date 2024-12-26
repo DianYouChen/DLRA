@@ -48,7 +48,7 @@ Since PyTorch 1.6.3 **does NOT** include locally connected network algorithms, u
 
 1. Create data directories at your work station: ```"[Your work dir]/data/DLRA_database/PKL_2Drd_rain10m"``` & ```"[Your work dir]/data/DLRA_database/ERA5_reanalysis/2022/202205"```.
 2. Download the [testing dataset](https://drive.google.com/drive/folders/1wIiez4v538lAgb8KCAO9Rhnc-FOLgC8w?usp=drive_link "AllDataDict") to the corresponding directory (e.g. PKL_2Drd_rain10m and ERA5_reanalysis).
-3. Download the [checkpoint]() to the corresponding directory ```"[Your work dir]/DLRA/training/checkpoints"```.
+3. Download the [checkpoint](https://drive.google.com/drive/folders/1NsPEJF7BqrcLBDnANBDhR777C8wzC51g?usp=drive_link) to the corresponding directory ```"[Your work dir]/DLRA/training/checkpoints"```.
 4. Please find ``` 0_fast_eval.ipynb ``` in ```"DLRA/evaluation"```.
 5. Reset the directory ```os.environ['ROOT_DATA_DIR']``` in the following format: ```"[Your work dir]/data/DLRA_database/"```.
 6. Make sure the start time and end time match those of the testing dataset:\
