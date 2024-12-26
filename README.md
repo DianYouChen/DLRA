@@ -48,7 +48,7 @@ Since PyTorch 1.6.3 **does NOT** include locally connected network algorithms, u
 
 1. Please find ``` 0_fast_eval.ipynb ``` in ```"DLRA/evaluation"```
 2. Create data directories at your work station: ```"/data/DLRA_database/PKL_2Drd_rain10m"``` & ```"/data/DLRA_database/ERA5_reanalysis"```
-3. Reset ```os.environ['ROOT_DATA_DIR']``` in the following format: ```"[Your work dir]/"```
+3. Reset ```os.environ['ROOT_DATA_DIR']``` in the following format: ```"[Your work dir]/data/DLRA_database/"```
 
 
 
