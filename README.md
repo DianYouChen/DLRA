@@ -46,15 +46,18 @@ Since PyTorch 1.6.3 **does NOT** include locally connected network algorithms, u
 
 ### Get started with inference
 
-1. Create data directories at your work station: ```"[Your work dir]/data/DLRA_database/PKL_2Drd_rain10m"``` & ```"[Your work dir]/data/DLRA_database/ERA5_reanalysis/2022/202205"```.
+1. Create the following directories on your workstation::\
+    ```"[Your work dir]/data/DLRA_database/PKL_2Drd_rain10m"```\
+    ```"[Your work dir]/data/DLRA_database/ERA5_reanalysis/2022/202205"```
 2. Download the [testing dataset](https://drive.google.com/drive/folders/1wIiez4v538lAgb8KCAO9Rhnc-FOLgC8w?usp=drive_link "AllDataDict") to the corresponding directory (e.g. PKL_2Drd_rain10m and ERA5_reanalysis).
-3. Download the [checkpoint](https://drive.google.com/drive/folders/1NsPEJF7BqrcLBDnANBDhR777C8wzC51g?usp=drive_link) to the corresponding directory ```"[Your work dir]/DLRA/training/checkpoints"```.
-4. Please find ``` 0_fast_eval.ipynb ``` in ```"DLRA/evaluation"```.
-5. Reset the directory ```os.environ['ROOT_DATA_DIR']``` in the following format: ```"[Your work dir]/data/DLRA_database/"```.
-6. Make sure the start time and end time match those of the testing dataset:\
+3. Download the [checkpoint](https://drive.google.com/drive/folders/1NsPEJF7BqrcLBDnANBDhR777C8wzC51g?usp=drive_link) and place it in the directory ```"[Your work dir]/DLRA/training/checkpoints"```.
+4. Locate the file ``` 0_fast_eval.ipynb ``` in the ```"DLRA/evaluation"``` folder.
+5. Reset the environment variable ```os.environ['ROOT_DATA_DIR']``` to the following path format:\
+    ```"[Your work dir]/data/DLRA_database/"```.
+6. Make sure the start and end times match those of the testing dataset by adjusting the following:\
    ```parser.add_argument('--test_start', type=parse_date_start, default=datetime(2022, 5, 1))```\
    ```parser.add_argument('--test_end', type=parse_date_end, default=datetime(2022, 5, 31, 23, 50))```
-7. Run each block in ``` 0_fast_eval.ipynb ```.
+7. Run each code block in ``` 0_fast_eval.ipynb ```.
 
 
 
