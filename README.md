@@ -52,8 +52,8 @@ Since PyTorch 1.6.3 **does NOT** include locally connected network algorithms, u
 4. Please find ``` 0_fast_eval.ipynb ``` in ```"DLRA/evaluation"```.
 5. Reset the directory ```os.environ['ROOT_DATA_DIR']``` in the following format: ```"[Your work dir]/data/DLRA_database/"```.
 6. Make sure the start time and end time match those of the testing dataset:
-  <p>```parser.add_argument('--test_start', type=parse_date_start, default=datetime(2022, 5, 1))```<br>
-   ```parser.add_argument('--test_end', type=parse_date_end, default=datetime(2022, 5, 31, 23, 50))```</p>
+<p>   ```parser.add_argument('--test_start', type=parse_date_start, default=datetime(2022, 5, 1))```<br>
+      ```parser.add_argument('--test_end', type=parse_date_end, default=datetime(2022, 5, 31, 23, 50))```</p>
 8. Run each block in ``` 0_fast_eval.ipynb ```.
 
 
