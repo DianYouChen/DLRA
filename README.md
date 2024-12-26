@@ -44,6 +44,13 @@ conda install -c anaconda basemap -y
 ### Locally connected network
 Since PyTorch 1.6.3 **does NOT** include locally connected network algorithms, users need to manually add the `Conv2dLocal` module to the PyTorch source code. Please refer to the [pull request](https://github.com/pytorch/pytorch/pull/1583/files) for detailed instructions and code implementation.
 
+### Get started with inference
+
+1. Please find ``` 0_fast_eval.ipynb ``` in ```"DLRA/evaluation"```
+2. Create data directories at your work station: ```"/data/DLRA_database/PKL_2Drd_rain10m"``` & ```"/data/DLRA_database/ERA5_reanalysis"```
+3. Reset ```os.environ['ROOT_DATA_DIR']``` in the following format: ```"[Your work dir]/"```
+
+
 
 
 
