@@ -48,16 +48,17 @@ Since PyTorch 1.6.3 **does NOT** include locally connected network algorithms, u
 
 1. Create the following directories on your workstation::\
     ```"[Your work dir]/data/DLRA_database/PKL_2Drd_rain10m"```\
-    ```"[Your work dir]/data/DLRA_database/ERA5_reanalysis/2022/202205"```
-2. Download the [testing dataset](https://drive.google.com/drive/folders/1wIiez4v538lAgb8KCAO9Rhnc-FOLgC8w?usp=drive_link "AllDataDict") to the corresponding directory created in the previous step.
-3. Download the [checkpoint](https://drive.google.com/drive/folders/1NsPEJF7BqrcLBDnANBDhR777C8wzC51g?usp=drive_link) and place it in the directory ```"[Your work dir]/DLRA/training/checkpoints"```.
-4. Locate the file ``` 0_fast_eval.ipynb ``` in the ```"DLRA/evaluation"``` folder.
-5. Reset the environment variable ```os.environ['ROOT_DATA_DIR']``` to the following path format:\
+    ```"[Your work dir]/data/DLRA_database/ERA5_reanalysis/2022/202205"```\
+    ```"[Your work dir]/DLRA/training/checkpoints"```
+3. Download the [testing dataset](https://drive.google.com/drive/folders/1wIiez4v538lAgb8KCAO9Rhnc-FOLgC8w?usp=drive_link "AllDataDict") to the corresponding directory created in the previous step.
+4. Download the [checkpoint](https://drive.google.com/drive/folders/1NsPEJF7BqrcLBDnANBDhR777C8wzC51g?usp=drive_link) and place it in the directory ```"[Your work dir]/DLRA/training/checkpoints"```.
+5. Locate the file ``` 0_fast_eval.ipynb ``` in the ```"DLRA/evaluation"``` folder.
+6. Reset the environment variable ```os.environ['ROOT_DATA_DIR']``` to the following path format:\
     ```"[Your work dir]/data/DLRA_database/"```.
-6. Make sure the start and end times match those of the testing dataset by adjusting the following:\
+7. Make sure the start and end times match those of the testing dataset by adjusting the following:\
    ```parser.add_argument('--test_start', type=parse_date_start, default=datetime(2022, 5, 1))```\
    ```parser.add_argument('--test_end', type=parse_date_end, default=datetime(2022, 5, 31, 23, 50))```
-7. Run each code block in ``` 0_fast_eval.ipynb ```.
+8. Run each code block in ``` 0_fast_eval.ipynb ```.
 
 
 
