@@ -46,7 +46,7 @@ Since PyTorch 1.6.3 **does NOT** include locally connected network algorithms, u
 
 ### Get started with inference
 
-1. Create data directories at your work station: ```"/data/DLRA_database/PKL_2Drd_rain10m"``` & ```"/data/DLRA_database/ERA5_reanalysis"```.
+1. Create data directories at your work station: ```"[Your work dir]/data/DLRA_database/PKL_2Drd_rain10m"``` & ```"[Your work dir]/data/DLRA_database/ERA5_reanalysis/2022/202205"```.
 2. Download the [testing dataset](https://drive.google.com/drive/folders/1wIiez4v538lAgb8KCAO9Rhnc-FOLgC8w?usp=drive_link "AllDataDict") to the corresponding directory (e.g. PKL_2Drd_rain10m and ERA5_reanalysis).
 4. Please find ``` 0_fast_eval.ipynb ``` in ```"DLRA/evaluation"```.
 5. Reset the directory ```os.environ['ROOT_DATA_DIR']``` in the following format: ```"[Your work dir]/data/DLRA_database/"```.
